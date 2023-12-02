@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- 引入样式 -->
+    <link rel="stylesheet" type="text/css" href="./css/loading.css">
+		<link rel="stylesheet" type="text/css" href="./css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="./css/component.css" />
+		<script src="./js/modernizr.custom.js"></script>
+		<script src="./js/jquery.min.js"></script>
+		<title>小威同学</title>
+		<script>  
+// 浏览器标题切换  
+var OriginTitile = document.title;    // 保存之前页面标题  
+var titleTime;  
+document.addEventListener('visibilitychange', function(){  
+    if (document.hidden){  
+        document.title = '这里是大型相亲现场：非诚勿扰！有请主持人：孟非！';  
+        
+		clearTimeout(titleTime);  
+    }else{  
+        document.title = '好的，现在...对不起我什么都没说';  
+        titleTime = setTimeout(function() {  
+            document.title = OriginTitile;  
+        }, 2000); // 2秒后恢复原标题  
+    }  
+});  
+</script>  
+	</head>
+	<body>
+<!--加载动画-->
+<div id="loading-box">
+    <div class="loading-left-bg"></div>
+    <div class="loading-right-bg"></div>
+    <div class="spinner-box">
+        <div class="loader">
+            <div class="inner one"></div>
+            <div class="inner two"></div>
+            <div class="inner three"></div>
+        </div>
+        <div class="loading-word">
+            <p class="loading-title"></p>
+            <span id="loading-text">加载中</span>
+        </div>
+    </div>
+</div>
+		<div class="container">
+			<div id="splitlayout" class="splitlayout">
+				<div class="intro">
+					<div class="side side-left">
+						<header class="codropsheader clearfix">
+
+							<div class="demos">
+							<h1>告诉我</h1>
+							</div>
+						</header>
+
+						<div class="intro-content">
+							<div class="profile"><img src="./img/xvtx.png" alt="我要这个！"></div>
+							<h1><span><a href="https://xvtx.github.io" target="_blank">小威同学</a></span><span>关于小威同学</span></h1>
+						</div>
+						<div class="overlay"></div>
+					</div>
+					<div class="side side-right">						<header class="codropsheader clearfix">
+
+							<div class="demo">
+							<h1>你爱谁</h1>
+							</div>
+						</header>
+						<div class="intro-content">
+							<div class="profile"><img src="./img/xhtx.png" alt="我选这个！"></div>
+							<h1><span><a href="https://v.douyin.com/iRT5TytV/" target="_blank">小花同学</a></span><span>关于小花同学</span></h1>
+						</div>
+						<div class="overlay"></div>
+					</div>
+				</div><!-- /intro -->
+				<div class="page page-left">
+					<div class="page-inner">
+						<section>
+							<h2>我是小威同学</h2>
+							<p><a href="https://xvtx.github.io/xvtx">点此前去骚扰</a></p>
+							<p>一级BUG发明家</p>
+							<p>二级随缘躺平大师</p>
+							<p>三级间歇性勤快症患者</p>
+							<p>差点是村里的骄傲</p>
+							<p>淘宝网余额不足用户</p>
+							<p>各种垃圾食品忠实粉丝</p>
+							<p>偶尔做一些自己感兴趣的事，但又常常半途而废。</p>
+							<h3>简介</h3>
+							<p>本人学识渊博，经验丰富，代码风骚，效率恐怖。</p>
+							<p>C/C＋＋，java，php无不精通，熟练掌握各种框架。</p>
+							<p>会DDOS一秒钟死一个站，会注入，会上传，会Xss，会破解，会嗅探，会开发，会业务，会运维，会渗透。互联网内，我无处不在。</p>
+							<p>全国漏洞认识深刻，熟练掌握各种操作系统内核。认真学习过《黑客攻防技术宝典》，《逆向工程》，《游戏waigua攻防艺术》等专业书籍。深山苦练十余载，一天只睡2小时。</p>
+							<p>听指挥，执行快，脾气好，不喷人，操作虎，意识强，渗透快，shell多，能过狗，能过盾。</p>
+							<p>千里之外取服务器首级，瞬息之间爆管理员狗头，压安全狗如压草芥。电话通知出Bug后，秒登vpn，千里之外定位问题，瞬息之间修复上线。</p>
+							<p>只有你想不到的，没有我做不到的。</p>
+							<p>以上都是吹的，我只会划水摸鱼，我是个废物。</p>
+							<p>世界上有一个网站搭建成功，就有一个网站成功跑路。</p>
+							<p>本站到底能存活多久，说到底，我也是不知道的。只能看命运的齿轮，它向哪里碾去！！！</p>
+							</section>
+					</div><!-- /page-inner -->
+				</div><!-- /page-right -->
+				<div class="page page-right">
+					<div class="page-inner">
+						<section>
+							<h2>我是小花同学</h2>
+							<p><a href="https://v.douyin.com/iRT5TytV/">点此前去骚扰</a></p>
+							<p>大家好，我是小花同学，不高不矮，不胖不瘦，不温不热，人傻嘴不甜长的磕搀还没钱</p>
+							<p>我的兴趣爱好是画画唱歌游泳等等，但大家不要和我讨论，因为我怕露馅</p>
+							<p>你们现在可能还不太了解我，不过没关系，我只是一位迪士尼在逃公主而已</p>
+							<p>实在没啥特长，要不我给大家<del>磕个头</del>，我求你们记住我，希望大家收藏。</p>
+							</section>	</section>
+					</div><!-- /page-inner -->
+				</div><!-- /page-left -->
+				<a href="#" class="back back-right" title="回去？">&rarr;</a>
+				<a href="#" class="back back-left" title="回去？">&larr;</a>
+			</div><!-- /splitlayout -->
+		</div><!-- /container -->
+		<script src="./js/classie.js"></script>
+		<script src="./js/cbpSplitLayout.js"></script><!-- noscript -->
+<noscript>
+<div class="noscript fixed-top">请开启 JavaScript</div>
+</noscript>
+<script>
+    //加载完成后执行
+    window.addEventListener('load', function () {
+        //载入动画
+        $('#loading-box').attr('class', 'loaded');
+        $('#bg').css("cssText", "transform: scale(1);filter: blur(0px);transition: ease 1.5s;");
+        $('#section').css("cssText", "opacity: 1;transition: ease 1.5s;");
+        $('.cover').css("cssText", "opacity: 1;transition: ease 1.5s;");
+
+        //用户欢迎
+        
+
+        //中文字体缓加载-此处写入字体源文件
+        //先行加载简体中文子集，后续补全字集
+        //由于压缩过后的中文字体仍旧过大，可转移至对象存储或 CDN 加载
+        const font = new FontFace(
+            "MiSans",
+            "url(" + "./font/MiSans-Regular.woff2" + ")"
+        );
+        document.fonts.add(font);
+
+    }, false)
+
+</script>
+</body>
+</html>
